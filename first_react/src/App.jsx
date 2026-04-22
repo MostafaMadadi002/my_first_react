@@ -3,33 +3,35 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import Card from './card'
+import info from './info'
+import info2 from './info2'
+function creatcard(cont) {
 
-const name = "mostafa madadi";
-const time = new Date();
-const hours = time.getHours();
-console.log(hours);
-let greting = "";
-let st = {
-  color : "red",
-  fontSize :"20px"
+  return <Card
+    key={cont.id}
+    img={cont.img}
+    name={cont.name}
+    email={cont.email}
+  />
 }
-if (hours < 12){
-  greting = "moning";
-  st.color = "red";
-}else if(hours > 12 ){
-  greting = "after noon";
-  st.color = "green";
-  console.log(greting,st.color)
-}else{
-  greting = "night";
-  st.color = "blue";
-}
-
 function App() {
-return (
-<div>
-  <h1 style={st}>good {greting}</h1>
-</div>
-)
+  return (
+    <div style={{ display: "flex", flexWrap: "wrap", gap: "5px" }}>
+      {info.map(creatcard)}
+      {info2.map(creatcard)}
+      {info2.map(creatcard)}
+      {info.map(creatcard)}
+      {info.map(creatcard)}
+      {info.map(creatcard)}
+      {info.map(creatcard)}
+      {info.map(creatcard)}
+      {info.map(creatcard)}
+      {info.map(creatcard)}
+      {info.map(creatcard)}
+      {info.map(creatcard)}
+
+    </div>
+  )
 }
 export default App
