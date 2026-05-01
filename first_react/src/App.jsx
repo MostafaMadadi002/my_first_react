@@ -33,6 +33,7 @@ function App() {
       <input onChange={handle} type="text" placeholder='name' name='fname' />
       <input onChange={handle} type="text" placeholder='last' name='last' />
       <input onChange={handle} type="password" placeholder="password" name='pass' />
+      <p>done</p>
     </div>
   );
 }
