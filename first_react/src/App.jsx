@@ -41,17 +41,40 @@
 
 import React, { useState } from "react";
 
-function App(){
-  const [text , setText] = useState("")
-  function handleChange(e){
-    let name = e.target.value;
-    setText(name)
-  }
+// function App(){
+//   const [text , setText] = useState("")
+//   function handleChange(e){
+//     let name = e.target.value;
+//     setText(name)
+//   }
 
+//   return (
+//     <div>
+//       <input type="text" onChange={handleChange}/>
+//       <h1>{text}</h1>
+//     </div>
+//   )
+// }
+
+// export default App;
+
+function App() {
+  const list = [
+    {
+      id: 1, item: "first item"
+    },
+    { id: 2, item: "second item" },
+    { id: 3, item: "third item" }
+  ]
+  function Creat_list() {
+    return (list.map((element) => {
+      return <li key={element.id}>{element.item}</li>
+    }))
+  }
   return (
     <div>
-      <input type="text" onChange={handleChange}/>
-      <h1>{text}</h1>
+      <h1>to do list</h1>
+      <Creat_list />
     </div>
   )
 }
