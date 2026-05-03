@@ -58,25 +58,35 @@ import React, { useState } from "react";
 
 // export default App;
 
+// function App() {
+//   const list = [
+//     {
+//       id: 1, item: "first item"
+//     },
+//     { id: 2, item: "second item" },
+//     { id: 3, item: "third item" }
+//   ]
+//   function Creat_list() {
+//     return (list.map((element) => {
+//       return <li key={element.id}>{element.item}</li>
+//     }))
+//   }
+//   return (
+//     <div>
+//       <h1>to do list</h1>
+//       <Creat_list />
+//     </div>
+//   )
+// }
+
+// export default App;
+
+import Form from "./components/Form";
 function App() {
-  const list = [
-    {
-      id: 1, item: "first item"
-    },
-    { id: 2, item: "second item" },
-    { id: 3, item: "third item" }
-  ]
-  function Creat_list() {
-    return (list.map((element) => {
-      return <li key={element.id}>{element.item}</li>
-    }))
-  }
   return (
     <div>
-      <h1>to do list</h1>
-      <Creat_list />
+      <Form />
     </div>
   )
 }
-
 export default App;
