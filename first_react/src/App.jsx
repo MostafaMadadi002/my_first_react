@@ -7,6 +7,7 @@
 // import info from './info'
 // import info2 from './info2'
 
+
 // function App() {
 //   const [conatact, setcontact] = useState({
 //     fname: "",
@@ -81,12 +82,23 @@ import React, { useState } from "react";
 
 // export default App;
 
-import Form from "./components/Form";
-function App() {
-  return (
-    <div>
-      <Form />
-    </div>
-  )
+// import Form from "./components/Form";
+// function App() {
+//   return (
+//     <div>
+//       <Form />
+//     </div>
+//   )
+// }
+// export default App;
+
+
+function App(){
+    return (
+        <div>
+            <h1></h1>
+        </div>
+    )
 }
-export default App;
+
+export default App()
