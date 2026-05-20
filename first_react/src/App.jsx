@@ -40,7 +40,7 @@
 // }
 // export default App;
 
-import React, { useState } from "react";
+import React from "react";
 
 // function App(){
 //   const [text , setText] = useState("")
@@ -93,12 +93,12 @@ import React, { useState } from "react";
 // export default App;
 
 
-function App(){
-    return (
-        <div>
-            <h1></h1>
-        </div>
-    )
+function App() {
+  return (
+    <div>
+      <h1>hello world</h1>
+    </div>
+  )
 }
 
-export default App()
+export default App;
