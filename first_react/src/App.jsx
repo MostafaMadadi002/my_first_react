@@ -97,6 +97,8 @@ function App() {
   return (
     <div>
       <h1>hello world</h1>
+      <h2>this the second time</h2>
+      <p>this is a simple paragraph</p>
     </div>
   )
 }
